@@ -22,6 +22,9 @@ a:hover {
   color: #8ec4dd;
   text-decoration: none;
 }
+p {
+  color: #111;
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
@@ -30,6 +33,9 @@ h1, h2, h3, h4, h5, h6 {
 
 #main {
   margin-top: 90px;
+}
+.modal-body li{
+  text-align: justify;
 }
 
 /*--------------------------------------------------------------
@@ -414,6 +420,7 @@ section {
   padding: 60px 0;
   position: relative;
 }
+
 .home::before {
   content: "";
   position: absolute;
@@ -473,7 +480,8 @@ section {
 }
 .home .icon-boxes .icon-box p {
   font-size: 15px;
-  color: #848484;
+  color:#111;
+  text-align: justify;
 }
 @media (max-width: 1200px) {
   .home .content {
@@ -498,6 +506,9 @@ section {
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
   z-index: 1;
+}
+.definition p{
+  text-align: justify;
 }
 .definition .section-title h2{
   color: #002c83;
@@ -591,6 +602,9 @@ section {
 .obligation h2{
   color:#002c83;
 }
+.obligation .card-link{
+  color:#002c83;
+}
 .obligation .icon-box {
   padding: 30px;
   position: relative;
@@ -653,6 +667,9 @@ section {
 .procedure h2{
   color:#002c83;
 }
+.procedure .collapsed{
+  color: black;
+}
 .procedure .container li{
   text-align: left;
 }
@@ -696,6 +713,10 @@ section {
   right: 0;
   top: 0;
 }
+.procedure p{
+  color:#111;
+  font:bold;
+}
 .procedure .procedure-list p {
   margin-bottom: 0;
   padding: 10px 0 0 0;
@@ -722,11 +743,15 @@ section {
 }
 
 
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
 .about {
   padding-bottom: 80px;
+}
+.about .rounded{
+  align-items: center;
 }
 
 
@@ -749,5 +774,8 @@ section {
   padding-top: 10px;
   text-align: center;
   font-size: 13px;
-  color: #fff;
+  color: #002c83;
+}
+#footer .credits a {
+  color: #00da00;
 }
