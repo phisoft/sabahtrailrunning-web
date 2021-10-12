@@ -39,9 +39,15 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top header-transparent">
     <div class="container d-flex align-items-center justify-content-between">
+      <div class="logo">
+        <!--<h1 class="text-light"><a href="index.html"><span>Squadfree</span></a></h1>-->
+        <!-- Uncomment below if you prefer to use an image logo -->
+         <a href="index.html"><img src="assets/img/logoNobg.png" alt="" class="img-fluid"></a>
+      </div>
 
-      <nav id="navbar" class="navbar">
+      <nav id="navbar" class="navbar"> 
         <ul>
+          
           <!--<li><a class="nav-link scrollto" href="#hero">Home</a></li>-->
           
           <li class="dropdown"><a href="#Definition"><span>Definition</span> <i class="bi bi-chevron-down"></i></a>
@@ -52,17 +58,17 @@
           </li>
           <li class="dropdown"><a href="#ethics"><span>Ethics for Trail Runner</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#ethics">Environment</a></li>
-              <li><a href="#ethics">Safety Protocol</a></li>
-              <li><a href="#ethics">Runner Responsibility</a></li>
-              <li><a href="#ethics">Medical</a></li>
+              <li><a data-bs-toggle="modal" data-bs-target="#environment">Environment</a></li>
+              <li><a data-bs-toggle="modal" data-bs-target="#Safety">Safety Protocol</a></li>
+              <li><a data-bs-toggle="modal" data-bs-target="#Responsibility">Runner Responsibility</a></li>
+              <li><a data-bs-toggle="modal" data-bs-target="#Medical">Medical</a></li>
             </ul>
           </li>
           <li class="dropdown"><a href="#Obligations"><span>Ethics Charter & Obligations</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#Obligations">Responsibility of SATRA</a></li>
-              <li><a href="#Obligations">Responsibility of Race Organizers</a></li>
-              <li><a href="#Obligations">River Crossings</a></li>
+              <li><a data-bs-toggle="modal" data-bs-target="#SATRA">Responsibility of SATRA</a></li>
+              <li><a data-bs-toggle="modal" data-bs-target="#Organizers">Responsibility of Race Organizers</a></li>
+              <li><a data-bs-toggle="modal" data-bs-target="#River">River Crossings</a></li>
             </ul>
           </li>
           <li class="dropdown"><a href="#Procedure"><span>Trail-Run Sanctioning Procedure</span> <i class="bi bi-chevron-down"></i></a>
@@ -85,66 +91,52 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero">
-
-      <div class="hero-container">
-        <div class="row justify-content-between">
+    <div class="hero-container">   
+      <div class="row justify-content-between">
           <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
-            <div data-aos="zoom-out">
+            <div data-aos="zoom-out"> 
               <h1>The SATRA	 Ethical	Charter	</span></h1>
-            <!--<h2>We are team of talented designers making websites with Bootstrap</h2> -->
-              <div class="text-center text-lg-start">
-                <a href="#about" class="btn-get-started scrollto">Get Started</a>
-              </div>
-            </div>
-          </div>
-
-          <!--<div class="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
-                <img src="assets/img/logo.png" class="img-fluid animated" alt="">
-              </div>-->
-          
-        </div>
-      </div>
+         <!-- <h2>We are team of talented designers making websites with Bootstrap</h2>-->  
+        <div class="text-center text-lg-start">
+        <a href="#home" class="btn-get-started scrollto">Get Started</a>
+                
+    </div>
   </section><!-- End Hero -->
 
   <main id="main">
 
     <!-- ======= Home Section ======= -->
     <section id="home" class="home">
-      <div class="container">
-
-        <div class="row no-gutters">
-          <div class="content col-xl-5 d-flex align-items-stretch" data-aos="fade-up">
+      <div class="container" class="fade-up">
+        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
             <div class="content">
               <h3>Introduction</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-              </p>
-              <a href="#" class="about-btn">About us <i class="bx bx-chevron-right"></i></a>
-            </div>
+              <a href="#about" class="about-btn">About us <i class="bx bx-chevron-right"></i></a>
+              <div class="col-xl-12 d-flex align-items-stretch">
+                <div class="icon-boxes d-flex flex-column justify-content-center">
+                  <div class="row">
+                    <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                      <i class="bi bi-building"></i>
+                      <p>Inspiration for the creation of a charter of ethics for runner’s and race directors/event organizers and stakeholders comes from the International Trail Running Association (ITRA) and the values in which SATRA wishes to introduce within the trail running community.</p>
+                    </div>
+                    <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                      <i class="bi bi-hand-thumbs-up-fill"></i>
+                      <p>Equality, respect for other people and the environment, mutual assistance and solidarity are fundamental principles of the ITRA charter.</p>
+                    </div>
+                    <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                      <i class="bi bi-calendar2-event-fill"></i>
+                      <p>The SATRA ethical charter shall form the backbone of all trail running events in which a system of honesty, integrity, and an understanding of what trail running values are shall be the guiding principles for all events in Sabah.</p>
+                    </div>
+                    <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                      <i class="bi bi-people-fill"></i>
+                      <p>These principles and values will also apply to runners, event organizers and race directors of trail running in Sabah.</p>
+                    </div>
+                  </div>
+              
+              
+            
           </div>
-          <div class="col-xl-7 d-flex align-items-stretch">
-            <div class="icon-boxes d-flex flex-column justify-content-center">
-              <div class="row">
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-                  <i class="bx bx-receipt"></i>
-                  <h4>Corporis voluptates sit</h4>
-                  <p>Inspiration for the creation of a charter of ethics for runner’s and race directors/event organizers and stakeholders comes from the International Trail Running Association (ITRA) and the values in which SATRA wishes to introduce within the trail running community.</p>
-                </div>
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-                  <i class="bx bx-cube-alt"></i>
-                  <h4>Ullamco laboris nisi</h4>
-                  <p>Equality, respect for other people and the environment, mutual assistance and solidarity are fundamental principles of the ITRA charter.</p>
-                </div>
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-                  <i class="bx bx-images"></i>
-                  <h4>Labore consequatur</h4>
-                  <p>The SATRA ethical charter shall form the backbone of all trail running events in which a system of honesty, integrity, and an understanding of what trail running values are shall be the guiding principles for all events in Sabah.</p>
-                </div>
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-                  <i class="bx bx-shield"></i>
-                  <h4>Beatae veritatis</h4>
-                  <p>These principles and values will also apply to runners, event organizers and race directors of trail running in Sabah.</p>
-                </div>
+          
               </div>
             </div><!-- End .content-->
           </div>
@@ -155,17 +147,18 @@
 
     <!-- ======= Definition Section ======= -->
     <section id="Definition" class="definition">
-      <div class="container">
-        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+      <div class="container" class="fade-up">
+        
+        <div class="section-title" data-aos="fade-in" data-aos-delay="200">
           <h2>Definition</h2>
           <p>Trail-running is a pedestrian race open to all, in a natural environment (mountain, desert, forest, plain etc.) with minimal possible paved or asphalt road (which should not exceed 20% of the total course).
             The terrain can vary (dirt roads, village gravel roads, single track jungle trails, trails through villages and plantations) and the route must be properly marked.
             The race is held in respect of sporting ethics, loyalty, solidarity and the environment.</p>
         </div>
-
-          <div class="col-xl-12 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5" data-aos="fade-left">
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5" data-aos="fade-left">
             <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
-              <div class="icon"><i class="bx bx-fingerprint"></i></div>
+              <div class="icon"><i class="bi bi-collection-fill"></i></div>
               <h4 class="title"><a href="">Classification of Trail running races</a></h4>
               <p class="description"> 
                 <li>Trail: Under 42 km</li> 
@@ -176,9 +169,11 @@
                   That includes physical markings (Marking tape, signage)and as an option, GPS tracks and map indications for technical races. </p>
                 <p>"Self-sufficiency or semi self-sufficiency" means that the runner has to be autonomous between aid stations, regarding clothing, communications, food and drink.</p>
             </div>
-
+            </div>
+          
+            <div class="col-xl-6 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5" data-aos="fade-left">
             <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
-              <div class="icon"><i class="bx bx-gift"></i></div>
+              <div class="icon"><i class="bi bi-stickies-fill"></i></div>
               <h4 class="title"><a href="">Definition of self-sufficiency and semi self-sufficiency.</a></h4>
               <p>Self-sufficiency; Whereby a runner is expected to carry all the necessary items needed in order to complete the race between start and finish. 
                 A runner will be provided clean drinking water on the race course at key locations within reasonable distances and reasonable elevation gains at staggered intervals along a race course. </p>
@@ -186,6 +181,7 @@
               <p>Semi-self-sufficiency: Whereby a runner is expected to carry all the necessary items needed in order to complete the race between start and finish but will be provided
                  clean drinking water and meals as well as basic assistance on the race course within reasonable distances and reasonable elevation gains at staggered intervals along a race course.</p>
             </div>
+          </div>
 
           </div>
         </div>
@@ -200,37 +196,130 @@
         <div class="section-title" data-aos="fade-in" data-aos-delay="100">
           <h2>Trail-Running Ethics for Trail Runners</h2>
         </div>
+        <!-- Button trigger modal -->
+
 
         <div class="row" data-aos="fade-left">
           <div class="col-lg-3 col-md-4">
             <div class="icon-box" data-aos="zoom-in" data-aos-delay="50">
               <i class="ri-store-line" style="color: #ffbb2c;"></i>
-              <h3><a href="">Environment</a></h3>
+              <h3><a data-bs-toggle="modal" data-bs-target="#environment">Environment</a></h3>
             </div>
           </div>
-
+          
           <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
             <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
               <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
-              <h3><a href="">Safety Protocol</a></h3>
+              <h3><a data-bs-toggle="modal" data-bs-target="#Safety">Safety Protocol</a></h3>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
             <div class="icon-box" data-aos="zoom-in" data-aos-delay="150">
               <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
-              <h3><a href="">Runners Responsibility</a></h3>
+              <h3><a data-bs-toggle="modal" data-bs-target="#Responsibility">Runners Responsibility</a></h3>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
             <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
               <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
-              <h3><a href="">Medical</a></h3>
+              <h3><a data-bs-toggle="modal" data-bs-target="#Medical">Medical</a></h3>
             </div>
           </div>
 
         </div>
+        <!-- Modal environment -->
+        <div class="modal fade" id="environment" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Environment</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <li>LEAVE NO TRACE. Do not throw rubbish on the trails and always carry out your rubbish if you are unable to dispose of it.</li>
+                <li>BE COURTEOUS OF WILDLIFE. NEVER chase, injure, kill, harass, or take any action against wildlife. Do not disturb village life stock at all costs.</li>
+                <li>LEAVE NATURE WHERE YOU FIND IT AND AS YOU FIND IT. Admire and appreciate plants, insects, animals, rocks and stones as well as natural vegetation but do not remove. Take photos if you would like a souvenir. </li>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal safety protocol -->
+        <div class="modal fade" id="Safety" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Safety protocol</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <li>ALWAYS WATCH OUT FOR OTHERS IN NEED. If you find someone lost, injured or is not thinking sensibly, assist them if necessary and either guide them to the next check point or contact the organizer for instructions on the next best course of action.</li>
+                <li>FOLLOW ALL MARKED ROUTES. Always stick to the marked route. If you do not see markers after 50 meters to 100 meters, stop and go back to the last marker you saw and look for visible signs of a junction or turn you may have missed. If you do not see markers after trying to locate the route, call the organizer and report your situation and location. Do not attempt to carry on following a route without markers unless you are absolutely sure it is the correct route.</li>
+                <li>ALWAYS FOLLOW TRAIL AND ROAD SAFETY PROTOCOLS. It is recommended that the use of reflective vests and a rear blinker light facing the rear be deployed during bad weather or at night on trails. The same should be used for sections which require a runner to run along the side of a main road in the daytime or at night or during bad weather. Always face traffic on main roads and avoid walking in large groups bunched together. Always stay in a single file line if walking along the side of a main road or off the main road for safety. </li>
+                <li>DO NOT USE EARPHONES WHEN WALKING ALONG THE SIDE OF MAIN ROADS.</li>
+                <li>ALWAYS ENSURE YOUR MOBILE PHONE BATTERY IS FULLY CHARGED before the start of an event and always ensure you can hear the phone ring if an organizer needs to contact you.</li>
+                <li>ALWAYS ABIDE BY THE MANDATORY KIT LIST FOR AN EVENT. If you feel it is necessary to add on additional equipment for safety and performance considerations, you should do so. </li>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal safety protocol -->
+        <div class="modal fade" id="Responsibility" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Runners Responsibility</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <li>Do not sell or swap race bibs and race slots without the permission of an organizer as this is not only illegal but ethically wrong. Swapping bibs/selling race slots illegally can cause both legal and medical issues for an organizer and may mean there is no insurance coverage for the individual or individuals who have conducted an illegal bib swap or sale of a race slot. </li>
+                <li>It is always the runner’s responsibility to read all terms and conditions of the event before registering and paying an entry fee to participate. The onus must always be with the runner to ensure they accept and understand the terms before paying their entry fees and other costs for participation in any event. It is also the runner’s responsibility to ensure they are aware of any changes to the race course, itinerary and/or event format by ensuring they keep up to date with information from the organizer at all times. </li>
+                <li>If you, as a runner are unhappy with an event organizer or a member of the staff, communicate with the event organizer either by email explaining who you are, what your bib number is and what specifically you are unhappy about. Explain as detailed and as honestly what aspects of a race disappointed you and if a runner feels the event has not fulfilled expectations, explain why and make suggestions to the organizer on how they can improve the event standards in the future. Allow the organizer to reply officially and to try to look into a runner’s issues in a sensible time frame. Social media should be a last resort if the issue cannot be resolved.  </li>
+                <li>Always close gates in village areas after passing through. Never assume the runner behind you will close it unless they inform you they will close it. These gates are used by villagers to prevent their life stock from escaping from their land and destroying or damaging crops on other people’s land.</li>
+                <li>A runner is always responsible for ensuring their name is listed and spelt correctly on official event name lists before an event. Always inform an organizer in advance or as soon as you spot the error and do not wait to inform them at the last minute.</li>
+                <li>Always give way to faster runners. Do not block runners from passing you unless the path is narrow and you need to thread carefully. </li>
+                <li>Cheating during races is unacceptable. Utilizing transportation or taking short cuts off the marked route during a race to gain an advantage over other runners is unethical and wrong and can result not only in disqualification. Trail runners are expected to be honest in their conduct on the race course and to compete within the “spirit of the race.” </li>
+                <li>If you feel the results of an event are not correct, speak to the organizers in a calm manner privately. Explain why you feel there has been an unjust situation that has resulted in an in-correct result in your finish time or your final finish position. If the event organizer requests you to email them officially about it, follow protocols and do so within a reasonable time frame. If you have evidence to submit, do so to help prove your case.</li>
+                <li>If a runner is unhappy with a safety aspect of an event either before, during or after, they should inform the organizers accordingly and if the matter is serious enough that warrants the attention of SATRA, then the runner should also inform SATRA. </li>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Medical -->
+        <div class="modal fade" id="Medical" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Medical</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <li>A race director or medical doctor assisting with the event may stop a runner from proceeding during the race if the runner may compromise their physical or mental well-being.  </li>
+                <li>Runners are assured clean drinking water at all water stations/check points during a race by an organizer.  </li>
+                <li>Runners are responsible in informing the organizer of a serious medical condition before an event if there is need for the organizer to be aware. Runners agree to abide by the terms and conditions of an event at all times and are responsible in reading the terms and conditions of the event which forbid participation if a runner has a medical condition that prevents a runner from participation.</li>
+                <li>Runners are responsible in ensuring they are physically fit and conditioned to participate and are responsible for getting yearly medical check up’s done if necessary.</li>
+                <li>An organizer may have a set of medical conditions in their terms and conditions that prevent a runner from participating. Runners who have medical conditions listed in that list that prevents their participation may file an appeal with the organizer to participate providing sufficient reasons and supporting documents to allow for participation but the ultimate approval to participate will lie with the organizer.</li>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
 
       </div>
     </section><!-- End Ethics Section -->
@@ -247,28 +336,134 @@
         <div class="row">
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4 class="title"><a href="">Responsibilities of SATRA</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+              <div class="icon"><i class="bi bi-people"></i></div>
+              <h4 class="title">Responsibilities of SATRA</a></h4>
+              <p class="description">SATRA may be invited to act as a mediator in the event of any disputes between the organizer and... </p>
+              <a data-bs-toggle="modal" data-bs-target="#SATRA" class="card-link">View more..</a>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4 class="title"><a href="">Responsibilities of Race Organizers</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+              <div class="icon"><i class="bi bi-building"></i></div>
+              <h4 class="title">Responsibilities of Race Organizers</a></h4>
+              <p class="description">The organizer shall state officially on their event website/brochures:...</p>
+              <a data-bs-toggle="modal" data-bs-target="#Organizers" class="card-link">View more..</a>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4 class="title"><a href="">River Crossings</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+              <div class="icon"><i class="bi bi-water"></i></div>
+              <h4 class="title">River Crossings</a></h4>
+              <p class="description">An organizer is responsible in monitoring weather conditions in the lead up to an... </p>
+              <a data-bs-toggle="modal" data-bs-target="#River" class="card-link">View more..</a>
             </div>
           </div>
 
+        </div>
+
+        <!-- Modal SATRA -->
+        <div class="modal fade" id="SATRA" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Responsibility of SATRA</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <li>SATRA may be invited to act as a mediator in the event of any disputes between the organizer and participants, suppliers, or sponsors and will make recommendations as mediator to settle a dispute.  </li>
+                <li>Any issues beyond the scope of SATRA should be referred to the appropriate authorities.</li>
+                <li>SATRA shall remain neutral in all matters relating to event organizing and management of an event. However, SATRA can and will enforce improved safety protocols if any agents from SATRA are of the opinion safety standards need to be improved for the welfare of participants, volunteers and the organizer.</li>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Organizers -->
+        <div class="modal fade" id="Organizers" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Responsibilities of Race Organizers</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <li>The organizer shall state officially on their event website/brochures:
+                  <ul>Contact person </ul>
+                  <ul>the name of the event organizer,</ul>
+                  <ul>official operating address,</ul>
+                  <ul>office phone contact number; and</ul>
+                  <ul>official email address of the organization.</ul>
+                </li>
+                <li>Sanctioning process: 
+                  <ul>Step 1: 
+                  <a> An organizer shall attain a sanctioning permit from SATRA before announcing an event, event date, location and the launching registrations of the event and to begin collection of fees from runners by completing an application form and paying RM200 fee (non-refundable) up to 1 year before an event date.</a></ul>
+                  <ul>Step 2:
+                    <a>An organizer must submit final copies of the documents required for a SATRA event licence as listed and required by the Sports Commissioner’s office at least 45 days before an event date. This includes final proposed race course map, course data (distance/elevation gain/elevation loss/distance of water stations between each check point), cut off times, and a basic risk assessment plan to SATRA for assessment. </a>
+                  </ul>
+                  <ul>Step 3:
+                    <a>An organizer should immediately proceed and submit their application to the Sports Commissioner’s office. </a>
+                  </ul>
+                  <ul>Step 4:
+                    <a>The above step by step guide should allow for sufficient time for approvals and necessary replies from government agencies and no organizer should take for granted immediate approvals will be granted for what is considered “last minute application.” SATRA recommends the submission of necessary documentation to SATRA and the Sports Commissioner’s office should be done at least 60 days in advance.</a>
+                  </ul>
+                  <ul>Note:
+                    <a>SATRA will issue a sanctioning letter and approval to organize the said event upon the approval of the Sports Commissioner’s office. The approval from the Sports Commissioner’s office is paramount to getting SATRA sanctioning and for an event to be legally organized with the sanctioning of both SATRA and the Sports Commissioner’s office.  </a>
+                  </ul>
+                </li>
+                <li>An organizer shall ensure they inform SATRA of any changes of their operating office address, contact numbers.</li>
+                <li>An organizer should publish truthful releases to the media and general public and thus avoid misleading or inaccurate information so as to bring the sport into disrepute. </li>
+                <li>An organizer shall always offer equal prize money or awards to both male and female competitors when prizes are awarded for top finishing positions. Correct prize money information according to entry fees paid and categories must be clearly stated to all runners at the very beginning of the start of the launch of an event and should not be changed or modified. </li>
+                <li>The complete list of prizes should be reflected on the official event website and should be honoured at the prize giving ceremony on the event date or event finish date. </li>
+                <li>An organizer shall always provide accurate information relating to the distance, elevation gain, itinerary, start times and cut off times to all competitors. If there are check points and water stations, the locations of these check points and water stations should be indicated on a clear Goggle Earth map for runner’s to be able to download in advance of the event so they may plan their race. </li>
+                <li>All markings shall be spaced apart at reasonable intervals from start to finish of an event.</li>
+                <li>The use of signage at key junctions is highly recommended which should include the event organizers logo and a clear red/orange arrow pointing towards the direction runners must turn to. Markers should be visible at the junction turn leading runners on the correct path.</li>
+                <li>All markers and signage should be removed immediately after the event within reasonable time frame (1 week). All rubbish on the event route should be collected and disposed of appropriately.</li>
+                <li>The organizer is responsible in attaining all permissions from land owners, village heads and relevant village committees for routes that involve jungle trails in village areas in remote locations. Co-operation is essential in this regard.</li>
+                <li>The organizer is responsible in informing the relevant authorities in advance of the event date and to provide all necessary information and details related to the event together with a SATRA sanctioning letter for that event.</li>
+                <li>The organizer must ensure there is sufficient clean drinking water at all water stations relevant to the number of participants involved in the event. A lack of clean drinking water at any water station that see’s runner’s having to proceed without clean drinking is a serious violation.</li>
+                <li>An organizer must ensure there are marshals to sweep a race course behind the last runner’s during a race and they are able to communicate with the race director during a race on the race course or be able to relay information to the organizing team.</li>
+                <li>An organization is obligated to always ensure they are aware of the names and bib numbers of each participant that starts a race and to have contact details of that competitor at all times during an event so they are able to contact that competitor in the event of a need to communicate directly with that runner or in the event of an emergency. </li>
+                <li>It is recommended that all race bibs should contain the emergency contact number of the event organizer.</li>
+                <li>An organizer should have a comprehensive medical plan for an event that caters for the distance, number of participants, level of difficulty and terrain. </li>
+                <li>A Race Director must submit an Incident Report to SATRA in the event a competitor has to be evacuated off the race course within 48 hours of the end of the event by email providing the full name and bib number of the injured party, type of injury, possible causes and actions that occurred in the evacuation of the injured party off the race course and subsequent actions thereafter and latest medical condition update (if it is a serious medical incident). </li>
+                <li>ATRA maintains the right to request more details from an organizer if they feel the Incident Report is too vague or does not touch on the reasons of an incident.</li>
+                <li>The organizer is responsible in informing the runners emergency contact as soon as possible in the event of an emergency.</li>
+                <li>A Race Director may appoint an assistant to follow the injured runner to the hospital and to provide progress reports about the injured party and to keep the race director informed if there are complications. The RD’s priority is always at the race venue and to ensure all runners have safely finished.</li>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal River -->
+        <div class="modal fade" id="River" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">River Crossings</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <li>An organizer is responsible in monitoring weather conditions in the lead up to an event and to monitor river levels if river crossings are necessary during an event.  </li>
+                <li>If in best judgement, an organizer feels the weather conditions do not favour runners on the race course and there are too many safety hazards, an organizer may opt to either postpone an event date to a period no later than 6 months thereafter. </li>
+                <li>A post-race report should be submitted to SATRA within 14 days of the end of the event giving relevant information as to why the event was postponed or if the event did take place but the route distance was reduced or to inform SATRA of the postponement of the event to a new event date.</li>
+                <li>All major river and stream crossings that involve a crossing distance of 10 meters or greater and that are more than 1.5 meters deep require marshals to be stationed on both sides of the river to direct and to assist competitors as well as to monitor river levels and the speed of river currents. If river water levels and speed of river currents start to increase in speed and height that can be deemed to be a danger to competitors of all body sizes and weights, the marshals must contact and seek the advice of the race director immediately. Decision making must be made BEFORE the river water levels and current speeds reach a dangerous level. </li>
+                <li>Common sense should prevail at all times when handling runners and river crossings and safety shall always be the priority when allowing river crossings either at tributary or stream leading to a major river or at a main river.  SATRA shall assist if requested by an organizer in advising an organizer on safety protocols for river crossings during an event.</li>
+                <li>All river crossings that require a marshal or marshals must have radio or mobile phone access to the Race Director or organizers at all times during the river crossing </li>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -280,20 +475,25 @@
     
             <div class="section-title" data-aos="fade-in" data-aos-delay="100">
               <h2>Trail-Run Sanctioning Procedure For Organizer</h2>
-              <p>The organizer shall submit to SATRA the following details and information up to 1 year before an event date for a trail run event:</p>
-            <!--  <p> 
-                <li>A completed registration form and payment of RM250 preliminary sanctioning fee which is non-refundable.</li>
-                <li>A route map for each category including elevation chart and course data indicating:
-                  <li>Estimated total distance for each category</li>
-                  <li>Total elevation gain for each category</li>
-                  <li>Total Distance/Elevation gain between each water station and Cut off times</li>
-                  <li>Indicate on maps with a red circle of any potential river crossings on foot</li>
-                </li>
-                <li>A copy of the Mandatory kit list for runners participating in the event</li>
-                <li>A complete list of prizes to be awarded for each category and gender for the event</li>
-                <li>Event itinerary (including start times/expected finish times for each category)</li>
-                <li>Number of participants expected per category</li>
-                <li>Entry fee structure per category</li>-->
+              <p data-bs-toggle="collapse" href="#information">The organizer shall submit to SATRA the following details and information up to 1 year before an event date for a trail run event:<i class="bi bi-caret-down-fill"></i></p>
+              <div class="collapse" id="information">
+                <div class="card card-body">
+                  <p> 
+                    <li>A completed registration form and payment of RM250 preliminary sanctioning fee which is non-refundable.</li>
+                    <li>A route map for each category including elevation chart and course data indicating:
+                      <li>Estimated total distance for each category</li>
+                      <li>Total elevation gain for each category</li>
+                      <li>Total Distance/Elevation gain between each water station and Cut off times</li>
+                      <li>Indicate on maps with a red circle of any potential river crossings on foot</li>
+                    </li>
+                    <li>A copy of the Mandatory kit list for runners participating in the event</li>
+                    <li>A complete list of prizes to be awarded for each category and gender for the event</li>
+                    <li>Event itinerary (including start times/expected finish times for each category)</li>
+                    <li>Number of participants expected per category</li>
+                    <li>Entry fee structure per category</li>
+                  </p>
+                </div>
+              </div>  
             </div>
 
             <div class="procedure-list">
@@ -364,10 +564,6 @@
                     <p>Clear charity body to be listed by the organiser.</p>
                   </div>
                 </li>
-
-                
-    
-    
               </ul>
     
           </div>
@@ -375,17 +571,18 @@
     
 
     <!-- ======About Section ======= -->
-    <section id="about" class="about section-bg">
+    <section id="about" class="about">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
           <h2>About us</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
-
+        <div class=container-center>
+        <div class="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
+          <img src="assets/img/logoNobg.png" class="img-fluid animated" alt="">
         </div>
-
-      </div>
+      
+    </div>
     </section><!-- End About Section -->
 
   </main><!-- End #main -->
@@ -394,14 +591,14 @@
   <footer id="footer">
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Squadfree</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>Sabah Trail Running Association</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href="https://bootstrapmade.com/">SATRA</a>
       </div>
     </div>
   </footer><!-- End Footer -->
