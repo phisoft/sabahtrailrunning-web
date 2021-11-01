@@ -660,6 +660,109 @@ section {
   color: #fff;
 }
 
+/*--------------------------------------------------------------
+# objective (no css yet)
+--------------------------------------------------------------*/
+.objective h2{
+  color:#002c83;
+}
+.objective .card-link{
+  color:#002c83;
+}
+.objective .icon-box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+}
+.objective .icon-box::before {
+  content: "";
+  position: absolute;
+  background: white;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 100%;
+  transition: all 0.3s;
+  z-index: -1;
+}
+.objective .icon-box:hover::before {
+  background: #67b0d1;
+  top: 0;
+  border-radius: 0px;
+}
+.objective .icon {
+  margin-bottom: 15px;
+}
+.objective .icon i {
+  font-size: 48px;
+  line-height: 1;
+  color: #00da00;
+  transition: all 0.3s ease-in-out;
+}
+.objective .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.objective .title a {
+  color: #111;
+}
+.objective .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+.objective .icon-box:hover .title a, .objective .icon-box:hover .description {
+  color: #fff;
+}
+.objective .icon-box:hover .icon i {
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Logo
+--------------------------------------------------------------*/
+.logo h2{
+  color:#002c83;
+}
+.logo .card-link{
+  color:#002c83;
+}
+
+.logo .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.logo .title a {
+  color: #111;
+}
+.logo .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+.img-hover-zoom {
+  width: 550px;
+  height: 550px;
+  overflow: hidden;
+}
+img:hover {
+  width: 550px;
+  height: 550px;
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+}
+
+.img-hover-zoom img {
+  transition: transform .10s ease-in-out;
+  
+}
 
 /*--------------------------------------------------------------
 # Procedure (no css yet)
